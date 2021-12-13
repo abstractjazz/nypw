@@ -20,7 +20,7 @@ body {
     flex-wrap:wrap;
 }
 
-@media only screen and (max-width:1000px) {
+@media only screen and (max-width:780px) {
     .wireframe {
         height: 150vh;
         width: 170vw;
