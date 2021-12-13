@@ -10,8 +10,8 @@ body {
 }
 
 .wireframe {
-    height: auto;
-    width: auto;
+    height: 100vh;
+    width: 200vw;
 }
 
 #img-container {
