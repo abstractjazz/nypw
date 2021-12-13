@@ -17,13 +17,13 @@ body {
 #img-container {
     justify-content: center;
     display:flex;
-    flex-wrap:wrap;
+    
 }
 
 @media only screen and (max-width:1000px) {
     .wireframe {
-        height: 150vh;
-        width: 170vw;
+        height: 1000px;
+        width: 500px;
     }
 }
 
