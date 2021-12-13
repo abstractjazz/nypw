@@ -2,14 +2,14 @@
     overflow-x: hidden;
 }
 
-/* #iframe-container {
+#iframe-container {
     position: relative;
     display: flex;
     justify-content: center;
     top: 20vh;
-} */
+}
 
- .wireframe {
+ /* .wireframe {
     height: auto;
     width: auto;
 } 
@@ -22,8 +22,8 @@
 
  @media only screen and (max-width:1000px) {
     .wireframe {
-        height: 150vh;
-        width: 120vw;
+        height: 120vh;
+        width: 140vw;
     }
 } 
 
@@ -32,4 +32,4 @@
         height: 450vh;
         width: 110vw;
     }
-}  
+}   */
