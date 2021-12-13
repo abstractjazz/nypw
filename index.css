@@ -4,3 +4,8 @@
     justify-content: center;
     top: 20vh;
 }
+
+.wireframe {
+    height: 450vh;
+    width: 100vw;
+}
