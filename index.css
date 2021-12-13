@@ -22,7 +22,7 @@ body {
 
 @media only screen and (max-width:780px) {
     .wireframe {
-        height: 150vh;
+        height: auto;
         width: 170vw;
     }
 }
