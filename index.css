@@ -26,3 +26,10 @@ body {
         width: 120vw;
     }
 }
+
+@media only screen and (max-height:800px) {
+    .wireframe {
+        height: 450vh;
+        width: 110vw;
+    }
+}
