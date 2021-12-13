@@ -1,4 +1,4 @@
-/* body {
+ body {
     overflow-x: hidden;
 }
 
@@ -9,27 +9,27 @@
     top: 20vh;
 }
 
-.wireframe {
+/* .wireframe {
     height: auto;
     width: auto;
-}
+} */
 
-#img-container {
+/* #img-container {
     justify-content: center;
     display:flex;
     
-}
+} */
 
-@media only screen and (max-width:1000px) {
+/* @media only screen and (max-width:1000px) {
     .wireframe {
         height: 1000px;
         width: 500px;
     }
-}
+} */
 
-@media only screen and (max-height:800px) {
+/* @media only screen and (max-height:800px) {
     .wireframe {
         height: 450vh;
         width: 110vw;
     }
-} */
+}  */
