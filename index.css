@@ -28,35 +28,71 @@ header {
 
 #bg-image {
 position: absolute;
+left: 0px;
 top: 0vh;
 width: 100%;
-height: auto;
+height: 100vh;
 }
 
 #black-box {
 position: absolute;
 top: 0vh; 
-background-color: rgba(0, 0, 0, 0.88);
+background-color: rgba(0, 0, 0, 0.235);
 width: 100%;
 height: 142%;
 }
 
-#sec-2-container {
-    position: absolute;
-    width: 75%;
+/* #sec-2-container {
+    width: 50%;
     height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
+    
+} */
 
 #subhead-quote {
 position: absolute;
-top: 200vh;
-height: 20%;
+display: flex;
+flex-direction: column;
+/* justify-content: center; */
+align-items: center;
+top: 100vh;
+left: 0px;
+height: 120vh;
 width: 100%;
-background-color: black;
-color: rgb(215, 215, 215)
+background-color: #D7D7D7;
+color: rgb(215, 215, 215);
+/* box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 ); */
+backdrop-filter: blur( 4px );
+-webkit-backdrop-filter: blur( 4px );
+/* border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 ); */
+}
+
+#subhead-quote p {
+    width: 50%;
+}
+
+#form-container {
+position: absolute;
+top: 33%;
+width: 75%;
+height: auto;
+background: rgba( 255, 255, 255, 0.2 );
+box-shadow: 0 8px 32px 0 rgba(0, 0, 1, 0.37);
+backdrop-filter: blur( 16px );
+-webkit-backdrop-filter: blur( 16px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+z-index:20;
+}
+
+#texture {
+    position: absolute;
+    top: 0px;
+    width: 55%;
+    /* height: auto; */
+    /* z-index: -1; */
+    opacity: 0.75;
+    /* filter: blur(0.75px);  */
 }
 
 /* #img-container {
