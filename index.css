@@ -2,14 +2,19 @@
 @import url('http://fonts.cdnfonts.com/css/recoleta');
 @import url('http://fonts.cdnfonts.com/css/mories');
 @import url("https://use.typekit.net/nfa4krb.css");
+@import url('http://fonts.cdnfonts.com/css/days-sans-black');
 
  body {
     overflow-x: hidden;
     background: rgb(0, 0, 0);
 }
 
+/* section#main {
+    width: 50vw;
+} */
+
 #masthead {
-font-family: freight-big-pro, serif;
+font-family: 'Days Sans Black', serif;
 font-weight: 300;
 font-style: normal;
 font-size: 6em;
@@ -34,21 +39,98 @@ width: 100%;
 height: 100%;
 }
 
+
+@media only screen and (max-width: 1234px) {
+    #bg-image {
+        height: 100%;
+        width: 100vw;
+    }
+
+    #masthead {
+        font-size: 2.5em;
+        align-self: center;
+        flex-shrink: 3;
+    }
+
+}
+
 @media only screen and (max-width: 1000px) {
     #bg-image {
         height: 100%;
         width: auto;
     }
+
+    #masthead {
+        font-size: 2.5em;
+        align-self: center;
+        flex-shrink: 3;
+    }
+
 }
 
+
+@media only screen and (max-width: 800px) {
+    #bg-image {
+        height: 100%;
+        width: auto;
+    }
+
+    #masthead {
+        font-size: 2.5em;
+        align-self: center;
+        flex-shrink: 3;
+    }
+
+    #lead-para {
+        font-size: 0.75em;
+    }
+
+    section > h2 {
+        font-size: 0.95em;
+    }
+
+}
+
+/* @media only screen and (max-width: 466px) {
+    #bg-image {
+        height: 100%;
+        width: auto;
+    }
+
+    #masthead {
+        font-size: 1.5em;
+        align-self: center;
+    }
+
+} */
+
+@media only screen and (max-width: 520px) {
+    
+
+    #bg-image {
+        height: 100%;
+        width: auto;
+    }
+
+    #masthead {
+        font-size: 1.5em;
+        align-self: center;
+        
+    }
+
+    #texture {
+        display: none;
+    }
+
+}
 
 #black-box {
 position: absolute;
 top: 0vh; 
-background-color: rgba(0, 0, 0, 0.235);
+background-color: rgba(0, 0, 0, 0.15);
 width: 100%;
-height: 142%;
-}
+width: 142%;
+    }
 
 /* #sec-2-container {
     width: 50%;
@@ -57,6 +139,7 @@ height: 142%;
 } */
 
 #subhead-quote {
+/* background-image: url('assets/Subtle-Tile-Patterns-Vol8-PIXEDEN/dark-loom.png'); */
 position: absolute;
 display: flex;
 flex-direction: column;
@@ -70,7 +153,7 @@ width: 100%;
 background-color: #D7D7D7;
 /* color: rgb(215, 215, 215); */
 /* box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 ); */
-box-shadow: inset 0px 0px 5px rgba(0,0,0,0.75);
+/* box-shadow: inset 0px 0px 5px rgba(0,0,0,0.75); */
 backdrop-filter: blur( 4px );
 -webkit-backdrop-filter: blur( 4px );
 color: black;
@@ -93,14 +176,35 @@ border: 1px solid rgba( 255, 255, 255, 0.18 ); */
     color: black; 
     margin-bottom: 2vh;
     /* background-color: white;  */
-   font-family: freight-neo-pro, sans-serif; 
 } 
 
+#form-container button {
+    position: absolute;
+    left: 45%;
+    margin-top: 3vh;
+    border: none;
+    font-family: Helvetica, sans-serif;
+    font-weight: 150;
+}
+
+ #lead-para {
+  font-family: Helvetica;
+  font-weight: 200;
+}
+
+section > h2 {
+    font-family: 'Days Sans Black', sans-serif
+}
+
+
+
 #form-container {
+/* position: absolute;
+top: 40vh; */
 /* top: 33%; */
 align-self: center;
 width: 75%;
-height: auto;
+height: 35vh;;
 background: rgba( 255, 255, 255, 0.2 );
 box-shadow: 0 8px 32px 0 rgba(0, 0, 1, 0.37);
 backdrop-filter: blur( 16px );
@@ -108,8 +212,11 @@ backdrop-filter: blur( 16px );
 border-radius: 10px;
 border: 1px solid rgba( 255, 255, 255, 0.18 );
 z-index:20;
-overflow: hidden;
-
+overflow-x: hidden;
+overflow-y: auto;
+font-family: Helvetica, sans-serif;
+font-weight: 200;
+font-size: 0.75em;
 }
 
 
@@ -139,12 +246,36 @@ overflow: hidden;
 #texture {
     position: absolute;
     top: 0px;
+    left: 45vh;
     width: 55%;
     /* height: auto; */
     /* z-index: -1; */
     opacity: 0.75;
     /* filter: blur(0.75px);  */
 }
+
+/* #texture-2 {
+    position: absolute;
+    top: 35vh;
+    width: 55%;
+    transform: rotate(200deg);
+    /* height: auto; */
+    /* z-index: -1; */
+    /* opacity: 0.35; */
+    /* filter: blur(0.75px);  */
+/* } */
+
+/* #texture-3 {
+    position: absolute;
+    top: -20vh;
+    left: 55vw;
+    width: 55%;
+    transform: rotate(55deg);
+    /* height: auto; */
+    /* z-index: -1; */
+    /* opacity: 0.15; */
+    /* filter: blur(0.75px);  */
+/* }  */
 
 /* #img-container {
     justify-content: center;
