@@ -43,6 +43,8 @@ height: 100%;
     }
 
     #masthead {
+        position: absolute;
+        top: 50%;
         font-size: 2.5em;
         align-self: center;
         flex-shrink: 3;
@@ -57,9 +59,11 @@ height: 100%;
     }
 
     #masthead {
+        position: absolute;
+        top: 50%;
         font-size: 2.5em;
         align-self: center; 
-         flex-shrink: 3;
+        flex-shrink: 3;
     }
 
 }
@@ -72,6 +76,8 @@ height: 100%;
     }
 
     #masthead {
+        position: absolute;
+        top: 50%;
         font-size: 2.5em;
         align-self: center;
         flex-shrink: 3;
@@ -109,6 +115,8 @@ height: 100%;
     }
 
     #masthead {
+        position: absolute;
+        top: 50%;
         font-size: 1.5em;
         align-self: center;
         
