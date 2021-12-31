@@ -8,6 +8,7 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="./index.css">
+        <script src="./js/index.js"></script>
     </head>
     <body>
        
@@ -33,19 +34,78 @@
             <div id="form-container">
             <form name="contact" method="POST" data-netlify="true">
                 <p>
-                  <label>Your Name:<br>  <input class="input" type="text" name="name" /></label> 
+                  <label>Name:<br>  <input class="input" type="text" name="name" /></label> 
                 </p>
                 <p>
-                  <label>Your Email:<br> <input class="input" type="email" name="email" /></label>
+                  <label>Email:<br> <input class="input" type="email" name="email" /></label>
+                </p>
+               
+                <p>
+                  <label>Type of Property</label>
+                  <select id="property-select">
+                  <optgroup id="property-list">
+                  
+                    <option value="" selected="">Select</option>
+                    <option>Retail</option>
+                    <option>Office Building</option>
+                    <option>Church</option>
+                    <option>Mixed Use</option>
+                    <option>Warehouse</option>
+                    <option>Apartment(5-20 units)</option>
+                    <option>Apartment(21+ units)</option>
+                    <option>Other Commercial Use</option>
+                    <option>Other Residential Use</option>
+                  </optgroup>
+                  <button type="submit">Submit</button>
+                  </select>
+
+                <label>Loan Amount:</label>
+                <select id="amount-select">
+                  <optgroup id="amount-list">
+                  
+                    <option value="" selected="">Select</option>
+                    <option>500k-600k</option>
+                    <option>600k-1mm</option>
+                    <option>1mm-10mm</option>
+                    <option>20mm-30mm</option>
+                    <option>30mm-40mm</option>
+                    <option>40mm-50mm</option>
+                    <option>50mm-60mm</option>
+                    <option>60mm-70mm</option>
+                    <option>70mm-80mm</option>
+                    <option>80mm-90mm</option>
+                    <option>90mm-100mm</option>
+                    <option>100mm+</option>
+                  </optgroup>
+                </select>
+    
+                  <label>Credit History</label>
+                  <select id="credit-select">
+                  <optgroup id="credit-list">
+                  
+                    <option value="" selected="">Select</option>
+                    <option>Excellent</option>
+                    <option>Good</option>
+                    <option>Fair</option>
+                    <option>Poor</option>
+                    <option>Unsure</option>
+                  </optgroup>
+                </select><br><br>
                 </p>
                 <p>
                   <label>Message:<br> <textarea class="input" name="message"></textarea></label>
                 </p>
-                <p>
-                  <button type="submit">Submit</button>
-                </p>
+                <button type="submit">Submit</button>
               </form>
               <div>
               </section>
+
+              <section>
+                <div id="">
+
+                </div>
+              </section>
+
+
     </body>
 </html>

@@ -12,6 +12,7 @@ section#main {
     top: 0px;
     height: 100vh;
     width: 100vw;
+    background-attachment: fixed;
     background-image: url('assets/nycprivatemoneybg-2.jpg');
     background-repeat: no-repeat;
     background-position: center;
@@ -21,7 +22,7 @@ section#main {
 
 
 #masthead {
-
+    
     font-family: 'Days Sans Black', sans-serif;
     font-weight: 300;
     font-style: normal;
@@ -48,6 +49,7 @@ header {
     top: 0vh;
     width: 100%;
     height: auto;
+   
 
 }
 
@@ -259,7 +261,7 @@ section > h2 {
     overflow-x: hidden;
     overflow-y: auto;
     font-family: Helvetica, sans-serif;
-    font-weight: 200;
+    font-weight: 400;
     font-size: 0.75em;
 }
 
@@ -285,6 +287,17 @@ section > h2 {
     border-bottom: 0.5px solid rgb(255, 255, 255);
     outline: none !important;
  
+}
+
+select {
+    position: relative;
+    background-color: #DAE0E4;
+    border-top: transparent;
+    border-left: transparent;
+    border-right: transparent;
+    border-bottom: 0.5px solid rgb(255, 255, 255);
+    outline: none !important;
+    margin-right: 15vh;
 }
 
 #texture {
