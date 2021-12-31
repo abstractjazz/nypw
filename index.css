@@ -189,9 +189,11 @@ header {
 
     select {
         height: 8vh;
+        font-size: 1.25em;
     }
 
-  select, option   {
+  
+    select, option   {
      
     width: 100%;
     margin-bottom: 2vh;
