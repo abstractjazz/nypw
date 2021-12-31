@@ -186,6 +186,12 @@ header {
         width: 200%;
 
     }
+
+  select, option   {
+     
+    width: 100%;
+    margin-bottom: 2vh;
+    }
 }
 
 
@@ -226,7 +232,7 @@ header {
 
     position: absolute;
     left: 45%;
-    margin-top: 3vh;
+    margin-top: 5vh;
     border: none;
     font-family: Helvetica, sans-serif;
     font-weight: 150;
@@ -250,7 +256,7 @@ section > h2 {
 
     align-self: center;
     width: 75%;
-    height: 35vh;;
+    height: 55vh;
     background: rgba( 255, 255, 255, 0.2 );
     box-shadow: 0 8px 32px 0 rgba(0, 0, 1, 0.37);
     backdrop-filter: blur( 16px );
