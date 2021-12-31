@@ -187,6 +187,10 @@ header {
 
     }
 
+    select {
+        height: 5vh;
+    }
+
   select, option   {
      
     width: 100%;
