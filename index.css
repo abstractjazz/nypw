@@ -76,6 +76,18 @@ header {
         flex-shrink: 3;
     }
 
+    select {
+        height: 8vh;
+        font-size: 1.25em;
+    }
+
+  
+    select, option   {
+     
+    width: 100%;
+    margin-bottom: 2vh;
+    }
+
 }
 
 @media only screen and (max-width: 1000px) {
@@ -98,6 +110,18 @@ header {
         font-size: 2.5em;
         align-self: center; 
         flex-shrink: 3;
+    }
+
+    select {
+        height: 8vh;
+        font-size: 1.25em;
+    }
+
+  
+    select, option   {
+     
+    width: 100%;
+    margin-bottom: 2vh;
     }
 
 }
@@ -135,6 +159,18 @@ header {
         font-size: 0.95em;
     }
 
+    select {
+        height: 8vh;
+        font-size: 1.25em;
+    }
+
+  
+    select, option   {
+     
+    width: 100%;
+    margin-bottom: 2vh;
+    }
+
 }
 
 
@@ -165,6 +201,18 @@ header {
 
         display: none;
 
+    }
+
+    select {
+        height: 8vh;
+        font-size: 1.25em;
+    }
+
+  
+    select, option   {
+     
+    width: 100%;
+    margin-bottom: 2vh;
     }
 
 }
