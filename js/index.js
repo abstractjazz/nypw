@@ -9,7 +9,7 @@
 
   //     setTimeout(()=>{addToHeadline()}, 3000)
   // document.addEventListener('DOMContentLoaded', function() {
-  const form = document.getElementById("form-container");
+const form = document.getElementById("form-container");
   
 const inputArray = Array.from(document.getElementsByClassName('input'))
 
@@ -18,10 +18,13 @@ function myFunction() {
     const links = document.getElementById("myLinks");
     const blur = document.getElementById("blur-wrapper")
     const nav = document.getElementById('nav')
+    const bars = document.getElementById('bars')
     if (links.style.display === "block") {
       links.style.display = "none";
+      bars.className="fa fa-bars"
     } else {
       links.style.display = "block";
+      bars.className="fa fa-times"
     }
 
     if (links.style.display === "block") {
