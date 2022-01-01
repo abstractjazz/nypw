@@ -297,11 +297,16 @@ header {
 
     position: absolute;
     left: 45%;
-    bottom: 3vh;
     /* margin-top: 1vh; */
     border: none;
     font-family: Helvetica, sans-serif;
     font-weight: 150;
+    background-color: rgba(255, 255, 255, 0.096);
+    margin-bottom: 3vh;
+}
+
+#form-container button:hover {
+   background-color: #afddf78a;
 }
 
  #lead-para {
@@ -317,7 +322,7 @@ section > h2 {
 }
 
 #form-container {
-
+    
     align-self: center;
     width: 75%;
     height: 55vh;
@@ -338,6 +343,26 @@ section > h2 {
     font-size: 0.75em;
 }
 
+#form {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 3;
+    
+}
+
+#textarea{
+    margin-bottom: 2vh;
+    width: 100%;
+}
+
+button#form-button {
+    position: relative;
+    left: 0;
+    bottom: 0vh;
+    align-self: center;
+    justify-self: center;
+    /* margin-bottom: 4vh; */
+}
 
 .input {
    
