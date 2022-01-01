@@ -88,6 +88,7 @@ header {
     margin-bottom: 2vh;
     }
 
+
 }
 
 @media only screen and (max-width: 1000px) {
@@ -246,6 +247,11 @@ header {
     width: 100%;
     margin-bottom: 2vh;
     }
+
+    form {
+        width: 50;
+    }
+
 }
 
 
