@@ -379,15 +379,17 @@ select {
     top: 0px;
     overflow: hidden;
     background-color: rgba(51, 51, 51, 0.255);
-    top: 1px;
-    z-index: 125;
+    top: 0px;
+    left: 0px;
+    z-index: 100;
     width: 100vw;
     
   }
 
   #nav {
       position: fixed;
-      top: 0px;
+      top: 0px; 
+      left: 0px;     
   }
   
   /* Hide the links inside the navigation menu (except for logo/home) */
@@ -398,8 +400,6 @@ select {
   
   /* Style navigation menu links */
   .topnav a {
-    /* position: fixed;
-    top: 0px; */
     color: white;
     padding: 14px 16px;
     text-decoration: none;
@@ -410,7 +410,7 @@ select {
 }
 
 a:hover {
-  color: #C2C7CA;
+  color: #afddf7;
 }
   
   
