@@ -45,8 +45,15 @@ function myFunction() {
     function mobileFormFocus() {
       const isMobile = window.matchMedia("only screen and (max-width: 760px)").matches;
       const hasFocus = inputArray.map(input=>input === document.activeElement)
-
+      const para = document.getElementById('lead-para');
+      const subhead = document.getElementById('subhead');
    if (isMobile && hasFocus) {
-     
-      }
+    form.style.position = "absolute";
+    form.style.top = "0vh";
+    form.style.zIndex="200";
+    subhead.style.opacity="0";
+    para.style.opacity="0";
+      } else {
+        
+      }    
     }
