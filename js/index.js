@@ -1,13 +1,17 @@
-// document.addEventListener('DOMContentLoaded', function() {
-//     setTimeout(()=>{addToHeadline()}, 3000)
 // })
 
 // const addToHeadline = () => {
-//     const h1 = document.querySelector('#mast-container > h1')
-//     h1.style.color="black"
-    
-// }
+  //     const h1 = document.querySelector('#mast-container > h1')
+  //     h1.style.color="black"
+  
+  // }
+  
 
+  //     setTimeout(()=>{addToHeadline()}, 3000)
+  // document.addEventListener('DOMContentLoaded', function() {
+  const form = document.getElementById("form-container");
+  
+const inputArray = Array.from(document.getElementsByClassName('input'))
 
 function myFunction() {
     
@@ -32,3 +36,17 @@ function myFunction() {
     }
 
     
+    
+    
+    
+   
+    form.addEventListener('click', mobileFormFocus)
+
+    function mobileFormFocus() {
+      const isMobile = window.matchMedia("only screen and (max-width: 760px)").matches;
+      const hasFocus = inputArray.map(input=>input === document.activeElement)
+
+   if (isMobile && hasFocus) {
+     
+      }
+    }

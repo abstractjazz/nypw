@@ -4,12 +4,12 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
+        <title>Edgewood Capital: Private Money | Hard Money | Commercial</title> 
+        <!--will need James input on Title-->
+        <meta name="description" content="Edgewood Capital is a private lender based in the tristate, area specializing in hard money, private money, commercial loans and more. Our clients include developers, new entrepreneurs, and established businesses.">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="./index.css">
-        <script src="./js/index.js"></script>
     </head>
     <body>
       
@@ -22,18 +22,19 @@
             <a href="#about">About</a>
           </div>
           <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
             <i class="fa fa-bars"></i>
-          </a>
+            </a>
         </div>
-        <div id="blur-wrapper">
-        <section id="main">
-          <header id="mast-container">
-            <h1 id="masthead">Edgewood Capital</h1> 
-          </header>
-        </section>
 
-        <section id="subhead-quote">
+        <div id="blur-wrapper">
+          <section id="main">
+            <header id="mast-container">
+             <h1 id="masthead">Edgewood Capital</h1> 
+            </header>
+          </section>
+
+          <section id="subhead-quote">
             <h2>Lorem Ipsum quam adipiscing vitae proin sagittis nisl rhoncus</h2>
             <div id="lead-para">
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
@@ -45,7 +46,7 @@
             
             <img id="texture" src="./assets/watercolortexture.png"/>
             <div id="form-container">
-            <form name="contact" method="POST" data-netlify="true">
+            <form id ="form" name="contact" method="POST" data-netlify="true">
                 <p>
                   <label>Name:<br>  <input class="input" type="text" name="name" /></label> 
                 </p><br><br>
@@ -57,68 +58,68 @@
                   <label>Type of Property:</label>
                   <select id="property-select">
                   <optgroup id="property-list">
-                  
+                  <!--ref F Financial form for this-->
                     <option value="" selected="">Select</option>
-                    <option>Retail</option>
-                    <option>Office Building</option>
-                    <option>Church</option>
-                    <option>Mixed Use</option>
-                    <option>Warehouse</option>
-                    <option>Apartment(5-20 units)</option>
-                    <option>Apartment(21+ units)</option>
-                    <option>Other Commercial Use</option>
-                    <option>Other Residential Use</option>
+                    <option value ="" selected="">Retail</option>
+                    <option value ="" selected="">Office Building</option>
+                    <option value ="" selected="">Church</option>
+                    <option value ="" selected="">Mixed Use</option>
+                    <option value ="" selected="">Warehouse</option>
+                    <option value ="" selected="">Apartment(5-20 units)</option>
+                    <option value ="" selected="">Apartment(21+ units)</option>
+                    <option value ="" selected="">Other Commercial Use</option>
+                    <option value ="" selected="">Other Residential Use</option>
                   </optgroup>
                   <button type="submit">Submit</button>
                   </select>
 
-                <label>Loan Amount:</label>
-                <select id="amount-select">
-                  <optgroup id="amount-list">
+                  <label>Loan Amount:</label>
+                  <select id="amount-select">
+                    <optgroup id="amount-list">
                   
-                    <option value="" selected="">Select</option>
-                    <option>500K-600K</option>
-                    <option>600K-1MM</option>
-                    <option>1MM-10MM</option>
-                    <option>20MM-30MM</option>
-                    <option>30MM-40MM</option>
-                    <option>40MM-50MM</option>
-                    <option>50MM-60MM</option>
-                    <option>60MM-70MM</option>
-                    <option>70MM-80MM</option>
-                    <option>80MM-90MM</option>
-                    <option>90MM-100MM</option>
-                    <option>100MM+</option>
-                  </optgroup>
-                </select>
+                      <option value="" selected="">Select</option>
+                      <option>500K-600K</option>
+                      <option>600K-1MM</option>
+                      <option>1MM-10MM</option>
+                      <option>20MM-30MM</option>
+                      <option>30MM-40MM</option>
+                      <option>40MM-50MM</option>
+                      <option>50MM-60MM</option>
+                      <option>60MM-70MM</option>
+                      <option>70MM-80MM</option>
+                      <option>80MM-90MM</option>
+                      <option>90MM-100MM</option>
+                      <option>100MM+</option>
+                    </optgroup>
+                  </select>
     
                   <label>Credit History:</label>
                   <select id="credit-select">
-                  <optgroup id="credit-list">
-                  
-                    <option value="" selected="">Select</option>
-                    <option>Excellent</option>
-                    <option>Good</option>
-                    <option>Fair</option>
-                    <option>Poor</option>
-                    <option>Unsure</option>
-                  </optgroup>
-                </select>
-                </p><br><br>
+                    <optgroup id="credit-list">
+                      <option value="" selected="">Select</option>
+                      <option>Excellent</option>
+                      <option>Good</option>
+                      <option>Fair</option>
+                      <option>Poor</option>
+                      <option>Unsure</option>
+                    </optgroup>
+                  </select>
+                </p><br>
                 <p>
                   <label>Message:<br> <textarea class="input" name="message"></textarea></label>
-                </p>
-                <button type="submit">Submit</button>
+              </p>
+              <button type="submit">Submit</button>
               </form>
-              <div>
-              </section>
+              </div>
+          </section>
 
-              <section>
+              <!-- <section>
                 <div id="">
 
                 </div>
-              </section>
+              </section> -->
 
-            </div>
+        </div>
+        <script src="./js/index.js"></script>
     </body>
 </html>

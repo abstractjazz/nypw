@@ -53,6 +53,15 @@ header {
 
 }
 
+@media only screen and (max-width: 1330px) {
+    select, option   {
+     
+        width: 100%;
+        margin-bottom: 2vh;
+
+        }
+}
+
 
 @media only screen and (max-width: 1234px) {
 
@@ -167,7 +176,6 @@ header {
 
   
     select, option   {
-     
     width: 100%;
     margin-bottom: 2vh;
     }
@@ -211,7 +219,6 @@ header {
 
   
     select, option   {
-     
     width: 100%;
     margin-bottom: 2vh;
     }
@@ -243,13 +250,8 @@ header {
 
   
     select, option   {
-     
     width: 100%;
     margin-bottom: 2vh;
-    }
-
-    form {
-        width: 50;
     }
 
 }
@@ -292,7 +294,8 @@ header {
 
     position: absolute;
     left: 45%;
-    margin-top: 5vh;
+    bottom: 3vh;
+    /* margin-top: 1vh; */
     border: none;
     font-family: Helvetica, sans-serif;
     font-weight: 150;
@@ -327,7 +330,8 @@ section > h2 {
     border: 1px solid rgba( 255, 255, 255, 0.18 );
     z-index:20;
     overflow-x: hidden;
-    overflow-y: auto;
+    overflow-y: scroll;
+    white-space: no-wrap;
     font-family: Helvetica, sans-serif;
     font-weight: 400;
     font-size: 0.75em;
@@ -358,6 +362,7 @@ section > h2 {
 }
 
 select {
+
     position: relative;
     background-color: #DAE0E4;
     border-top: transparent;
@@ -379,6 +384,7 @@ select {
 
 
  /* Style the navigation menu */
+ 
  .topnav {
     /* font-family: 'Days Sans Black', sans-serif; */
     position: fixed;
