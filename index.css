@@ -183,6 +183,10 @@ header {
     input, select, textarea {
         font-size: 16px;
     } 
+
+    section#main {
+        background-attachment: scroll
+    }
 }
 
 
@@ -226,6 +230,10 @@ header {
     margin-bottom: 2vh;
     }
 
+    section#main {
+
+        background-attachment: "scroll";
+    } 
 }
 
 
@@ -255,6 +263,10 @@ header {
     select, option   {
     width: 100%;
     margin-bottom: 2vh;
+    }
+
+    section#main{
+        background-attachment: "scroll";
     }
 
 }
