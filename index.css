@@ -486,6 +486,7 @@ a:hover {
     align-items: center;
     justify-content: center;
     position: absolute;
+    overflow-x: hidden;
     left: 0px;
     top: 200vh;
     height: 100vh;
