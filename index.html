@@ -57,7 +57,7 @@
                
                 <p>
                   <label>Type of Property:</label>
-                  <select id="property-select">
+                  <select name="property-type" id="property-select">
                   <optgroup id="property-list">
                   <!--ref F Financial form for this-->
                     <option value="" selected="">Select</option>
@@ -74,11 +74,11 @@
                   </select>
 
                   <label>Loan Amount:</label>
-                  <select id="amount-select">
+                  <select name="loan-amount" id="amount-select">
                     <optgroup id="amount-list">
                   
                       <option value="" selected="">Select</option>
-                      <option name="half-mill" value="500K-600K" selected="500K-600K">500K-600K</option>
+                      <option value="500K-600K" selected="500K-600K">500K-600K</option>
                       <option value="600K-1MM" selected="600K-1MM">600K-1MM</option>
                       <option value="1MM-10MM" selected="1MM-10MM">1MM-10MM</option>
                       <option value="20MM-30MM" selected="20MM-30MM">20MM-30MM</option>
@@ -94,7 +94,7 @@
                   </select>
     
                   <label>Credit History:</label>
-                  <select id="credit-select">
+                  <select name="credit-type" id="credit-select">
                     <optgroup id="credit-list">
                       <option value="Excellent" selected="">Select</option>
                       <option value="Excellent" selected="Excellent">Excellent</option>
