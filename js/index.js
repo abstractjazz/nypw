@@ -1,20 +1,12 @@
-// })
 
-// const addToHeadline = () => {
-  //     const h1 = document.querySelector('#mast-container > h1')
-  //     h1.style.color="black"
-  
-  // }
-  
+const formContainer = document.getElementById("form-container");
+const form = document.getElementById('form')
 
-  //     setTimeout(()=>{addToHeadline()}, 3000)
-  // document.addEventListener('DOMContentLoaded', function() {
-const form = document.getElementById("form-container");
-  
 const inputArray = Array.from(document.getElementsByClassName('input'))
-
+const textarea = document.getElementById('textarea')
 function myFunction() {
     
+  //controls menu behavior
     const links = document.getElementById("myLinks");
     const blur = document.getElementById("blur-wrapper")
     const nav = document.getElementById('nav')
@@ -40,21 +32,30 @@ function myFunction() {
 
   const submitButton = document.querySelector('button#form-button')
 
+    
+    
     inputArray.map(input=>
       input.addEventListener('click', function() {
     if(input.style.backgroundColor="rgba(252, 222, 222, 0.7)"){
-    input.style.backgroundColor=""
+    input.style.backgroundColor="";
+
           }
         })
       )
       
-    
+
+  // controls form validation   
   submitButton.addEventListener('click', function(e){
     e.preventDefault();
-    // alert('no submission allowed');
+    let checkArray = []
+    const select = document.getElementsByClassName('select')
+    selectArray=Array.from(select)
+    selectArray.map(select=>checkArray.push(select.value))
     inputArray.map(input=>{if(input.value === ""){
       input.style.backgroundColor="rgba(252, 222, 222, 0.7)";
       input.placeholder="This field is required"
+      } else {
+        form.submit()
       }
     })
   })
@@ -62,22 +63,4 @@ function myFunction() {
 
 
    
-  //   form.addEventListener('click', mobileFormFocus)
-
-  //   function mobileFormFocus() {
-  //     const isMobile = window.matchMedia("only screen and (max-width: 760px)").matches;
-  //     const hasFocus = inputArray.map(input=>input === document.activeElement)
-  //     const para = document.getElementById('lead-para');
-  //     const subhead = document.getElementById('subhead');
-  //  if (isMobile && hasFocus) {
-  //    form.style.width = "100%";
-  //   // form.style.position = "absolute";
-  //   // form.style.top = "0vh";
-  //   // form.style.zIndex="200";
-  //   // subhead.style.opacity="0";
-  //   // para.style.opacity="0";
-  //     } else {
-        
-  //     }    
-  //   }
 
