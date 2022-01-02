@@ -1,7 +1,5 @@
 // })
 
-const { INTERRUPTION_MODE_IOS_DO_NOT_MIX } = require("expo-av/build/Audio");
-
 // const addToHeadline = () => {
   //     const h1 = document.querySelector('#mast-container > h1')
   //     h1.style.color="black"
@@ -40,28 +38,46 @@ function myFunction() {
       }
     }
 
+  const submitButton = document.querySelector('button#form-button')
+
+    inputArray.map(input=>
+      input.addEventListener('click', function() {
+    if(input.style.backgroundColor="rgba(252, 222, 222, 0.7)"){
+    input.style.backgroundColor=""
+          }
+        })
+      )
+      
     
-    
-    
-    
+  submitButton.addEventListener('click', function(e){
+    e.preventDefault();
+    // alert('no submission allowed');
+    inputArray.map(input=>{if(input.value === ""){
+      input.style.backgroundColor="rgba(252, 222, 222, 0.7)";
+      input.placeholder="This field is required"
+      }
+    })
+  })
+  
+
+
    
-    form.addEventListener('click', mobileFormFocus)
+  //   form.addEventListener('click', mobileFormFocus)
 
-    function mobileFormFocus() {
-      const isMobile = window.matchMedia("only screen and (max-width: 760px)").matches;
-      const hasFocus = inputArray.map(input=>input === document.activeElement)
-      const para = document.getElementById('lead-para');
-      const subhead = document.getElementById('subhead');
-   if (isMobile && hasFocus) {
-     form.style.width = "100%";
-    // form.style.position = "absolute";
-    // form.style.top = "0vh";
-    // form.style.zIndex="200";
-    // subhead.style.opacity="0";
-    // para.style.opacity="0";
-      } else {
+  //   function mobileFormFocus() {
+  //     const isMobile = window.matchMedia("only screen and (max-width: 760px)").matches;
+  //     const hasFocus = inputArray.map(input=>input === document.activeElement)
+  //     const para = document.getElementById('lead-para');
+  //     const subhead = document.getElementById('subhead');
+  //  if (isMobile && hasFocus) {
+  //    form.style.width = "100%";
+  //   // form.style.position = "absolute";
+  //   // form.style.top = "0vh";
+  //   // form.style.zIndex="200";
+  //   // subhead.style.opacity="0";
+  //   // para.style.opacity="0";
+  //     } else {
         
-      }    
-    }
-
+  //     }    
+  //   }
 
