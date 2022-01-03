@@ -185,7 +185,7 @@ header {
     } 
 
     section#main {
-        background-attachment: scroll
+        background-attachment: scroll;
     }
 }
 
@@ -234,6 +234,7 @@ header {
 
         background-attachment: "scroll";
     } 
+
 }
 
 
@@ -547,11 +548,14 @@ a:hover {
   }
   
 
-  @media (prefers-reduced-motion) {
+  /* @media (prefers-reduced-motion) {
     #about {
       animation: scroll 700s linear infinite;
     }
-  }
+  } */
+
+
+
   /* Add a grey background color on mouse-over */
   /* .topnav a:hover {
     background-color: #ddd;
