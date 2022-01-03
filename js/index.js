@@ -59,6 +59,16 @@ function myFunction() {
       }
     })
   })
+
+  const myLinks = document.getElementById("myLinks")
+  myLinks.addEventListener('click', function(){
+    bars.click();
+  })
+
+  const ec = document.getElementById("ec")
+  ec.addEventListener('click', function(){
+    bars.click();
+  })
   
 
 
