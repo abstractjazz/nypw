@@ -541,12 +541,13 @@ a:hover {
   /* #about-text {
     align-self: center;
   } */
-  @keyframes scroll {
+  
+  /* @keyframes scroll {
       100%{
           background-position: 0 -3000px;
       }
   }
-  
+   */
 
   /* @media (prefers-reduced-motion) {
     #about {
