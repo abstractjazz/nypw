@@ -267,7 +267,10 @@ header {
     }
 
     section#main{
-        background-attachment: local;
+        background-attachment: scroll;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
     }
 
 }
