@@ -267,7 +267,7 @@ header {
     }
 
     section#main{
-        background-attachment: scroll;
+        background-attachment: inherit;
     }
 
 }
