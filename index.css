@@ -232,7 +232,7 @@ header {
 
     section#main {
 
-        background-attachment: "scroll";
+        background-attachment: scroll;
     } 
 
 }
@@ -267,7 +267,7 @@ header {
     }
 
     section#main{
-        background-attachment: "scroll";
+        background-attachment: scroll;
     }
 
 }
