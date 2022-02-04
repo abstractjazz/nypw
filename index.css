@@ -334,7 +334,7 @@ for each section
     font-family: 'day sans black', serif;
 }
 
-#service-div  {
+#services  {
 display: flex;
 gap: 3.5vw;
 justify-content: center;

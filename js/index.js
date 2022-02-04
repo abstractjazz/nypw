@@ -92,7 +92,7 @@ function myFunction() {
     
 
     const changeServiceDivContent = (h1Text, imgSrc, paraText) => {
-    const mainDiv = document.getElementById('service-div');
+    const mainDiv = document.getElementById('services');
     
       const div = document.createElement('div');
       const h1 = document.createElement('h1');
@@ -108,12 +108,6 @@ function myFunction() {
       div.appendChild(h1)
       div.appendChild(img)
       div.appendChild(paragraph)
-
-      
-      
-      // const luxH1 = document.createElement('h1');
-      // luxH1.innerText="Hello World";
-      // luxDiv.append('luxH1');
     }
 
     luxury.addEventListener('click',function(){changeServiceDivContent("hello world!", "https://via.placeholder.com/200", "Try our luxury services! They are great.")});
