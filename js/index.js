@@ -82,33 +82,47 @@ function myFunction() {
   /* 1. refactor to use for other pages
      2. add paragraph content of flexbox
   */
-const fetchLuxury = () => {
-    const leftDiv = document.getElementById('left-div');
-    const luxury = document.getElementById('luxury');
-    
-    const populateLuxury = ()=> {
-      const luxDiv = document.createElement('div');
-      const luxH1 = document.createElement('h1');
-      const luxImg = document.createElement('img')
 
-      leftDiv.innerHTML=""
-      luxDiv.id="luxury-container";
-      luxH1.innerText="hello world!"
-      luxImg.src="https://via.placeholder.com/200"
-      luxDiv.appendChild(luxH1)
-      leftDiv.appendChild(luxDiv);
-      luxDiv.appendChild(luxImg)
-     
+    const luxury = document.getElementById('luxury');
+    const hardMoney = document.getElementById('hard-money');
+    const construction = document.getElementById('construction');
+    const conventional = document.getElementById('conventional');
+    const churches = document.getElementById('churches');
+    const medical = document.getElementById('medical');
+    
+
+    const changeServiceDivContent = (h1Text, imgSrc, paraText) => {
+    const mainDiv = document.getElementById('service-div');
+    
+      const div = document.createElement('div');
+      const h1 = document.createElement('h1');
+      const img = document.createElement('img')
+      const paragraph = document.createElement('p')
+
+      mainDiv.innerHTML=""
+      div.id = 'service-container';
+      h1.innerText = h1Text
+      img.src = imgSrc
+      paragraph.innerText = paraText
+      mainDiv.appendChild(div);
+      div.appendChild(h1)
+      div.appendChild(img)
+      div.appendChild(paragraph)
+
+      
       
       // const luxH1 = document.createElement('h1');
       // luxH1.innerText="Hello World";
       // luxDiv.append('luxH1');
     }
 
-    luxury.addEventListener('click', populateLuxury);
+    luxury.addEventListener('click',function(){changeServiceDivContent("hello world!", "https://via.placeholder.com/200", "Try our luxury services! They are great.")});
+    // hardMoney.addEventListener('click',function(){changeServiceDivContent()});
+    // construction.addEventListener('click',function(){changeServiceDivContent()});
+    // conventional.addEventListener('click',function(){changeServiceDivContent()});
+    // churches.addEventListener('click',function(){changeServiceDivContent()});
+    // medical.addEventListener('click',function(){changeServiceDivContent()});
    
-}
 
-fetchLuxury();
    
 

@@ -1,5 +1,6 @@
 
-@import url("https://fonts.cdnfonts.com/css/days-sans-black");
+/* @import url("https://fonts.cdnfonts.com/css/days-sans-black"); */
+@import url("https://use.typekit.net/nfa4krb.css");
  
 html {
     scroll-behavior: smooth;
@@ -29,7 +30,7 @@ section#main {
 
 #masthead {
     
-    font-family: 'Days Sans Black', sans-serif;
+    font-family: 'din-1451-lt-pro-engschrift', sans-serif;
     font-weight: 300;
     font-style: normal;
     font-size: 6em;
@@ -46,7 +47,7 @@ section#main {
     gap: 3vw;
     margin-top: -15vh;
     color: white;
-    font-family: 'Days Sans Black';
+    font-family: 'din-1451-lt-pro-engschrift';
     cursor: pointer;
     
 }
@@ -62,7 +63,7 @@ section#main {
     color:#afddf7;
 }
 
-#luxury-container {
+#service-container {
 display: flex;
 flex-direction: column;
 justify-content: center;
@@ -333,7 +334,7 @@ for each section
     font-family: 'day sans black', serif;
 }
 
-#left-div  {
+#service-div  {
 display: flex;
 gap: 3.5vw;
 justify-content: center;
@@ -378,7 +379,7 @@ width: 50%;
     -webkit-backdrop-filter: blur( 4px );
     color: black;
     z-index: 25;
-    font-family: 'Days Sans Black', sans-serif;
+    font-family: 'din-1451-lt-pro-engschrift', sans-serif;
     font-weight: 400;
     font-style: normal;
     overflow: hidden;
@@ -421,7 +422,7 @@ width: 50%;
 
 section > h2 {
 
-    font-family: 'Days Sans Black', sans-serif
+    font-family: 'din-1451-lt-pro-engschrift', sans-serif
 }
 
 #form-container {
@@ -520,7 +521,7 @@ select {
  /* Style the navigation menu */
  
  .topnav {
-    /* font-family: 'Days Sans Black', sans-serif; */
+    /* font-family: 'din-1451-lt-pro-engschrift', sans-serif; */
     position: fixed;
     top: 0px;
     overflow: hidden;
@@ -550,7 +551,7 @@ select {
     padding: 14px 16px;
     text-decoration: none;
     font-size: 1.25em;
-    font-family: 'Days Sans Black', sans-serif;
+    font-family: 'din-1451-lt-pro-engschrift', sans-serif;
     display: block;
     transition: color 2s ease-out 100ms;
 }
