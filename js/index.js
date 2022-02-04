@@ -71,6 +71,44 @@ function myFunction() {
   })
   
 
+  setTimeout(autoScroll, 2000)
 
+  function autoScroll(){
+    window.scrollTo(0, 50)
+  }
+ 
+
+  
+  /* 1. refactor to use for other pages
+     2. add paragraph content of flexbox
+  */
+const fetchLuxury = () => {
+    const leftDiv = document.getElementById('left-div');
+    const luxury = document.getElementById('luxury');
+    
+    const populateLuxury = ()=> {
+      const luxDiv = document.createElement('div');
+      const luxH1 = document.createElement('h1');
+      const luxImg = document.createElement('img')
+
+      leftDiv.innerHTML=""
+      luxDiv.id="luxury-container";
+      luxH1.innerText="hello world!"
+      luxImg.src="https://via.placeholder.com/200"
+      luxDiv.appendChild(luxH1)
+      leftDiv.appendChild(luxDiv);
+      luxDiv.appendChild(luxImg)
+     
+      
+      // const luxH1 = document.createElement('h1');
+      // luxH1.innerText="Hello World";
+      // luxDiv.append('luxH1');
+    }
+
+    luxury.addEventListener('click', populateLuxury);
+   
+}
+
+fetchLuxury();
    
 

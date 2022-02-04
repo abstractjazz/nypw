@@ -1,6 +1,10 @@
 
 @import url("https://fonts.cdnfonts.com/css/days-sans-black");
  
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background: rgb(0, 0, 0);
     
@@ -35,10 +39,41 @@ section#main {
 
 } 
 
+#service-links{
+    background:rgba(0, 0, 0, 0.084);
+    display: flex;
+    justify-content: center;
+    gap: 3vw;
+    margin-top: -15vh;
+    color: white;
+    font-family: 'Days Sans Black';
+    cursor: pointer;
+    
+}
+
+#service-links > a {
+    text-decoration: none;
+}
+
+#service-links > a:visited {
+    color: white;
+}
+#service-links > a:hover {
+    color:#afddf7;
+}
+
+#luxury-container {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
 header {
 
     display: flex;
     align-content: center;
+    flex-direction: column;
     justify-content: center;
     width: 100vw;
     height: 100vh; 
@@ -63,6 +98,7 @@ header {
 
         }
 }
+
 
 
 @media only screen and (max-width: 1234px) {
@@ -98,7 +134,6 @@ header {
     width: 100%;
     margin-bottom: 2vh;
     }
-
 
 }
 
@@ -281,8 +316,52 @@ header {
 
 }
 
+/* to do: 
+1. flex on left div
+create single page and dup in javascript
+for each section
+*/
 
+#summary-section {
+    display: flex;
+    background-color: #b5b4b4;
+    position: absolute;
+    left: 0;
+    top: 100vh;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'day sans black', serif;
+}
 
+#left-div  {
+display: flex;
+gap: 3.5vw;
+justify-content: center;
+flex-wrap: wrap;
+height: 99vh;
+width: 50vw;
+border: 3px solid green;
+overflow-x: scroll;
+
+}
+
+#interior {
+    width: 33%;
+}
+
+#right-div {
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+align-items: center;
+height: 99vh;
+width: 50vw;
+border: 3px solid red;
+}
+
+#form-2 {
+width: 50%;
+}
 
 #subhead-quote {
 
@@ -290,7 +369,7 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    top: 100vh;
+    top: 200vh;
     left: 0px;
     height: 100vh;
     width: 100vw;
@@ -303,7 +382,6 @@ header {
     font-weight: 400;
     font-style: normal;
     overflow: hidden;
-
 }
 
  #lead-para, h2 {
@@ -500,7 +578,7 @@ a:hover {
     position: absolute;
     overflow-x: hidden;
     left: 0px;
-    top: 200vh;
+    top: 300vh;
     height: 100vh;
     width: 100vw;
     animation: scroll 500s linear infinite;
