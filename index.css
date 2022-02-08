@@ -1,5 +1,5 @@
 
-/* @import url("https://fonts.cdnfonts.com/css/days-sans-black"); */
+@import url("https://fonts.cdnfonts.com/css/days-sans-black");
 @import url("https://use.typekit.net/nfa4krb.css");
  
 html {
@@ -30,7 +30,7 @@ section#main {
 
 #masthead {
     
-    font-family: 'din-1451-lt-pro-engschrift', sans-serif;
+    font-family: 'Days Sans Black', 'din-1451-lt-pro-engschrift', sans-serif;
     font-weight: 300;
     font-style: normal;
     font-size: 6em;
@@ -47,7 +47,8 @@ section#main {
     gap: 3vw;
     margin-top: -15vh;
     color: white;
-    font-family: 'din-1451-lt-pro-engschrift';
+    font-family: 'Days Sans Black', 'din-1451-lt-pro-engschrift', sans-serif;
+
     cursor: pointer;
     
 }
@@ -334,6 +335,11 @@ for each section
     font-family: 'day sans black', serif;
 }
 
+/* #yachtAssetDiv {
+    display: flex;
+    flex-direction: column;
+} */
+
 #services  {
 display: flex;
 gap: 3.5vw;
@@ -343,11 +349,51 @@ height: 99vh;
 width: 50vw;
 border: 3px solid green;
 overflow-x: scroll;
+}
 
+#right-div h1{
+font-family: 'Days Sans Black', 'din-1451-lt-pro-engschrift', serif;
+}
+
+#services h2 {
+    font-family: 'Days Sans Black', 'din-1451-lt-pro-engschrift', serif;
+    font-size: 0.95em;
+}
+#services p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 #interior {
     width: 33%;
+}
+
+#yachtAssetDiv{
+    margin-top:5vh;
+    width: 50%;
+}
+
+#yacht-icon {
+    width: 50px;
+    height: 50px;
+}
+
+#art-icon {
+    width: 50px;
+    height: 50px;
+}
+#aircraft-icon {
+    width: 50px;
+    height: 50px;
+}
+
+#aircraftAssetDiv{
+    margin-top:5vh;
+    width: 50%;
+}
+
+#artAssetDiv{
+    margin-top:5vh; 
+    width: 50%;  
 }
 
 #right-div {
@@ -358,10 +404,24 @@ align-items: center;
 height: 99vh;
 width: 50vw;
 border: 3px solid red;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 #form-2 {
-width: 50%;
+width: 75%;
+display: flex;
+flex-direction: column;
+flex-grow: 3; 
+}
+
+#form-2 button{
+    border: none;
+    background-color:rgba(250, 235, 215, 0)
+}
+
+#form-2 button:hover {
+    border: none;
+    background-color: #afddf78a;
 }
 
 #subhead-quote {
@@ -379,10 +439,14 @@ width: 50%;
     -webkit-backdrop-filter: blur( 4px );
     color: black;
     z-index: 25;
-    font-family: 'din-1451-lt-pro-engschrift', sans-serif;
+    font-family: 'Days Sans Black', 'din-1451-lt-pro-engschrift', sans-serif;
     font-weight: 400;
     font-style: normal;
     overflow: hidden;
+}
+
+#subhead-quote p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
  #lead-para, h2 {
@@ -402,7 +466,7 @@ width: 50%;
     left: 45%;
     /* margin-top: 1vh; */
     border: none;
-    font-family: Helvetica, sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-weight: 150;
     background-color: rgba(255, 255, 255, 0.096);
     margin-bottom: 3vh;
@@ -422,7 +486,7 @@ width: 50%;
 
 section > h2 {
 
-    font-family: 'din-1451-lt-pro-engschrift', sans-serif
+    font-family: 'Days Sans Black', 'din-1451-lt-pro-engschrift', sans-serif;
 }
 
 #form-container {
@@ -442,7 +506,7 @@ section > h2 {
     overflow-x: hidden;
     overflow-y: scroll;
     white-space: no-wrap;
-    font-family: Helvetica, sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-weight: 400;
     font-size: 0.75em;
 }
@@ -521,7 +585,7 @@ select {
  /* Style the navigation menu */
  
  .topnav {
-    /* font-family: 'din-1451-lt-pro-engschrift', sans-serif; */
+    /* font-family: 'Days Sans Black', 'din-1451-lt-pro-engschrift', sans-serif; */
     position: fixed;
     top: 0px;
     overflow: hidden;
@@ -551,7 +615,7 @@ select {
     padding: 14px 16px;
     text-decoration: none;
     font-size: 1.25em;
-    font-family: 'din-1451-lt-pro-engschrift', sans-serif;
+    font-family: 'Days Sans Black', 'din-1451-lt-pro-engschrift', sans-serif;
     display: block;
     transition: color 2s ease-out 100ms;
 }
@@ -598,6 +662,7 @@ a:hover {
   
   #about-text{
     width: 50%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   }
 
 
@@ -620,7 +685,7 @@ a:hover {
     overflow-x: hidden;
     overflow-y: scroll;
     white-space: no-wrap;
-    font-family: Helvetica, sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-weight: 600;
     font-size: 0.95em;
     line-height: 1.5;

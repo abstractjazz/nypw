@@ -71,7 +71,7 @@ function myFunction() {
   })
   
 
-  setTimeout(autoScroll, 2000)
+  setTimeout(autoScroll, 1000)
 
   function autoScroll(){
     window.scrollTo(0, 50)
@@ -89,10 +89,10 @@ function myFunction() {
     const conventional = document.getElementById('conventional');
     const churches = document.getElementById('churches');
     const medical = document.getElementById('medical');
-    
+    const mainDiv = document.getElementById('services');
 
     const changeServiceDivContent = (h1Text, imgSrc, paraText) => {
-    const mainDiv = document.getElementById('services');
+    
     
       const div = document.createElement('div');
       const h1 = document.createElement('h1');
@@ -109,8 +109,65 @@ function myFunction() {
       div.appendChild(img)
       div.appendChild(paragraph)
     }
+    
+    const createLuxAssetDiv = () => {
+      mainDiv.innerHTML=""
+      //YACHT
+      const yachtAssetDiv = document.createElement('div')
+      yachtAssetDiv.id="yachtAssetDiv"
+      const h2 = document.createElement('h2')
+      const p = document.createElement('p')
+      const img=document.createElement('img')
+      img.src="./assets/ferry-boat.png"
+      img.id="yacht-icon"
+      h2.innerText = "Yacht Financing"
+      p.innerText = "$5MM min loan size domestic •  $15MM min loan size international • Term: 2 - 3 years • 3.5% - 5% interest only, no upfront fees, no prepayment penalty • Yacht specifications (model, year built, etc.) • Proof of docked location • Method of registration • Borrower financial info US clients • LTV dependent on loan size, age of yacht and borrower’s financials •"
+      yachtAssetDiv.appendChild(h2)
+      yachtAssetDiv.appendChild(img)
+      yachtAssetDiv.appendChild(p) 
+      mainDiv.appendChild(yachtAssetDiv)
 
-    luxury.addEventListener('click',function(){changeServiceDivContent("hello world!", "https://via.placeholder.com/200", "Try our luxury services! They are great.")});
+      //ART FINANCING
+      const artAssetDiv = document.createElement('div')
+      artAssetDiv.id="artAssetDiv"
+      const artH2 = document.createElement('h2')
+      const artP = document.createElement('p')
+      const artImg = document.createElement('img')
+      artImg.src="./assets/painting.png"
+      artImg.id="art-icon"
+      artH2.innerText = "Art Financing"
+      artP.innerText = "$5MM min loan size domestic • $15MM min loan size international • Term: 2 - 3 years • 3.5% - 5% interest only, no upfront fees, no prepayment penalty • List of all art being offered as collateral and their locations • Borrower financial info • LTV up to 50% •"
+
+      artAssetDiv.appendChild(artH2)
+      artAssetDiv.appendChild(artImg)
+      artAssetDiv.appendChild(artP) 
+      mainDiv.appendChild(artAssetDiv)
+      
+      //AIRCRAFT FINANCING
+      const aircraftAssetDiv = document.createElement('div')
+      aircraftAssetDiv.id="aircraftAssetDiv"
+      const aircraftImg = document.createElement('img')
+      aircraftImg.src = "./assets/small-plane.png"
+      aircraftImg.id="aircraft-icon"
+      const aircraftH2 = document.createElement('h2')
+      const aircraftP = document.createElement('p')
+      aircraftH2.innerText = "Aircraft Financing"
+      aircraftP.innerText = "$4MM min loan size domestic • $15MM min loan size international • Lease or Lending (Lease is an option only for aircrafts) • Term: up to 5 years • 3.5% - 5% interest only, no upfront fees, no prepayment penalty • Model, year and tail number • Location based and registered • Entity that owns the plane • Borrower financial Info • LTV up to 75% •"
+      aircraftAssetDiv.appendChild(aircraftH2)
+      aircraftAssetDiv.appendChild(aircraftImg) 
+      aircraftAssetDiv.appendChild(aircraftP)
+      mainDiv.appendChild(aircraftAssetDiv)
+    }
+    
+    const luxuryProgramStyling = () => {
+      // luxury.addEventListener('click',function(){changeServiceDivContent("Luxury Asset-Based Financing", "https://via.placeholder.com/200", "Try our luxury services! They are great.")});
+      luxury.addEventListener('click', createLuxAssetDiv)
+
+    }
+
+    luxuryProgramStyling();
+    
+   
     // hardMoney.addEventListener('click',function(){changeServiceDivContent()});
     // construction.addEventListener('click',function(){changeServiceDivContent()});
     // conventional.addEventListener('click',function(){changeServiceDivContent()});
