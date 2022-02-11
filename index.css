@@ -8,9 +8,10 @@ html {
 
 body {
     background: rgb(0, 0, 0);
-    
+    overflow: -moz-scrollbars-none;
 }
 
+#services::-webkit-scrollbar { width: 0 !important }
 
 section#main {
 
@@ -69,6 +70,16 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
+width: 70%;
+}
+
+#service-container h1{
+    font-family: 'Days Sans Black', 'din-1451-lt-pro-engschrift', sans-serif;
+}
+
+.service-img {
+    width: 200px;
+    height: 200px;
 }
 
 header {
@@ -347,8 +358,13 @@ justify-content: center;
 flex-wrap: wrap;
 height: 99vh;
 width: 50vw;
-border: 3px solid green;
+/* border: 3px solid green; */
 overflow-x: scroll;
+}
+
+#service-container img {
+    width: 200px;
+    height: 200px;
 }
 
 #right-div h1{
@@ -358,6 +374,7 @@ font-family: 'Days Sans Black', 'din-1451-lt-pro-engschrift', serif;
 #services h2 {
     font-family: 'Days Sans Black', 'din-1451-lt-pro-engschrift', serif;
     font-size: 0.95em;
+    cursor:pointer;
 }
 #services p {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -365,10 +382,11 @@ font-family: 'Days Sans Black', 'din-1451-lt-pro-engschrift', serif;
 
 #interior {
     width: 33%;
+    margin-bottom: 5vh;
 }
 
 #yachtAssetDiv{
-    margin-top:5vh;
+    margin-top: 5vh;
     width: 50%;
 }
 
@@ -389,6 +407,7 @@ font-family: 'Days Sans Black', 'din-1451-lt-pro-engschrift', serif;
 #aircraftAssetDiv{
     margin-top:5vh;
     width: 50%;
+    margin-bottom: 10vh;
 }
 
 #artAssetDiv{
@@ -403,7 +422,6 @@ justify-content: flex-start;
 align-items: center;
 height: 99vh;
 width: 50vw;
-border: 3px solid red;
 font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
@@ -659,10 +677,15 @@ a:hover {
     color: white;
 
   }
+
+  #about h3 {
+    font-family: 'days-sans-black', 'din-1451-lt-pro-engschrift', sans-serif;
+    font-size: 3em;
+  }
   
   #about-text{
     width: 50%;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
   }
 
 
@@ -686,7 +709,6 @@ a:hover {
     overflow-y: scroll;
     white-space: no-wrap;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-weight: 600;
     font-size: 0.95em;
     line-height: 1.5;
     border-radius: 35px;
